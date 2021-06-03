@@ -8,6 +8,7 @@ let i1=4;
 let stop=0;
 let conti=0;
 var elem = document.documentElement;
+let tmp1=document.querySelector("clock");
 
 function openFullscreen() {
   if (elem.requestFullscreen) {
@@ -80,6 +81,7 @@ function changecolor() {
   } else { 
     i1 = i1 - 1 
   }	
+  tmp.innerHTML = 'Test:' +i1  ;	
 }
 
 function clickevent() {
